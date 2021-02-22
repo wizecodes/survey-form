@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang<!DO="en">
+<head> l 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link href="assets/css/main.css" rel="stylesheets">
+
+</head>
+<style>
+    body {
+        /* text-align: center; */
+        font-size: 16px;
+} 
+h1 {
+    font-size: 50px;
+}
+
+label {
+    align-items: center;
+    font-size: medium;
+}
+form {
+    padding: 20px;
+}
+
+.container {
+    background-color: rgb(201, 183, 183);
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+.input-textarea {
+    border-radius: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.div-center{
+    width: 20%;
+    margin: auto;
+}
+
+</style>
+<body>
+    <div class="container">
+
+        <h1 id="title" class="text-center">Anayah's Pastries Survey Form</h1>
+        <p id="description" class="text-center"> Thankyou for taking the time to help us improve our platform</p>
+    
+            <form id="survey-form">
+                <div class="form-group text-center">
+                    <label id="name-label" for="name" class="text-center">Name</label>
+                    <input type="name" name="name" id="name" class="form-control text-center" placeholder="Enter your name" Required /> 
+                </div>
+
+<br/>
+                <div class="form-group text-center">
+                    <label id="email-label" for="email" class="text-center">Email</label>
+                <input type="email" name="email" id="email" class="form-control text-center" placeholder="Enter your email" Required />
+                </div>
+
+                <br/>
+                <div class="form-group text-center">
+                    <label id="number-label" for="number" class="text-center">Phone number</label>
+                    <input type="number" name="phone number" id="number" class="form-control text-center" min="10" max="10" placeholder="Enter your phone number" Optional />
+                </div>
+                <br/>
+                <div class="form-group text-center">
+                    <p class="text-center">Which Anayah's Pastries' product do you enjoy the most?</p>
+                    <select id="dropdown" name="product" class="form-control text-center" Required>
+                        <option disabled selected value>Select product</option>
+                        <option value="bread">Sweet bread</option>
+                        <option value="pies">Chicken pie</option>
+                        <option value="croissants">Chocolate croissants</option>
+                        <option value="preferno">Prefer not to say</option>
+                        <option value="others">Others</option>
+
+                    </select>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <P class="text-center">Would you recommend Anayah's pastries to a friend?</P>
+                    <div class="div-center">
+
+                        <input name="user-recommend" value="yes" type="radio" class="input-radio" checked /> Yes
+                        <br/>
+                        
+                            <input name="user-recommend" value="maybe" type="radio" class="input-radio" /> Maybe
+                            <br/>
+                            
+                                <input name="user-recommend" value="No" type="radio" class="input-radio" /> No
+                                <br/>
+                    </div>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <p class="text-center"> What services at Anayah's pastries would you like improved? <br/><span class="clue">[check all that apply]</span></p>
+                    <br/>
+                    <div class="div-center">
+
+                        <input name="improve" value="packaging" type="checkbox" class="input-checkbox" checked/> Packaging of products
+                    <br/>
+                    
+                        <input name="improve" value="customer-care" type="checkbox" class="input-checkbox" /> Customer care
+                      <br/>
+                      
+                          <input name="improve" value="advertising" type="checkbox" class="input-checkbox" /> Advertising
+                          <br/>
+                          
+                              <input name="improve" value="delivery-service" type="checkbox" class="input-checkbox" /> Delivery service
+                              <br/>
+                            </div>
+                            <br/>
+                            <div class="form-group text-center">
+                                <p>Any comments or suggestions?</p>
+                            <br/>
+                        <textarea id="comments" name="comments" class="input-textarea" placeholder="enter your comments here..." ></textarea>
+                    </div> 
+                    <br/>                        
+                    <div class="form-group text-center">
+                        <button type="submit" id="submit" class="submit-button" >Submit</button>
+                    </div>
+                    </div>
+                
+                </div>
+                
+        
+                       
+
+            </form>
+    </div>
+        
+        </body>
